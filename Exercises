@@ -122,6 +122,8 @@ wn.onkey(rainbow, "space")
 wn.listen()                  
 wn.mainloop()
 
+#3 - #5 are turtle questions which I have skipped
+
 #6
 ScoreA = []
 ScoreB = []
