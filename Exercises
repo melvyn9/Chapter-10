@@ -123,3 +123,26 @@ wn.listen()
 wn.mainloop()
 
 #6
+ScoreA = []
+ScoreB = []
+Rounds = int(input("Please input the number of rounds that took place: "))
+
+for i in range(Rounds):
+    WhoWon = input("Please enter A for player A , B for player B or D for a draw: ")
+    if WhoWon == "A":
+        ScoreA.append(+15)
+        ScoreB.append(0)
+        print(ScoreA)
+        print(ScoreB)
+    elif WhoWon == "B":
+        ScoreB.append(+15)
+        ScoreA.append(0)
+        print(ScoreA)
+        print(ScoreB)
+    elif WhoWon == "D":
+        ScoreA.append(0)
+        ScoreB.append(0)
+        print(ScoreA)
+        print(ScoreB)
+    elif WhoWon != "A" or "B" or "D":
+        print("Please input the correct letter")
